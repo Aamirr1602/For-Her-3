@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.background {
+  background: url(background.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.85);
+}
+
+.intro h1 {
+  font-size: 2em;
+  animation: fadeIn 2s ease;
+  text-shadow: 0 0 10px #000;
+}
+
+.intro p {
+  margin-top: 10px;
+  opacity: 0.8;
+  text-shadow: 0 0 5px #000;
+}
+
+.cards-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  font-size: 2em;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  cursor: pointer;
+  line-height: 60px;
+  transition: transform 0.3s;
+  backdrop-filter: blur(4px);
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.message-box {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.message-box p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  opacity: 0.5;
+  text-shadow: 0 0 5px #000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
